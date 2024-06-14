@@ -11,26 +11,29 @@ namespace Task4
 		static void Main(string[] args)
 		{
 			#region employee
-			//Employee employee1 = new ContractEmployee("yusif", 1, 100, 10);
-			//employee1.DisplayEmployeeDetails();
-			#endregion
+			//Employee employee1 = new FullTimeEmployee("yusif", 1, 12000);
+			//Console.WriteLine(employee1.CalculateMonthlySalary());
 
-			#region traffic
-			//Traffic obj = new Traffic();
-			//Console.Write("enter a value: ");
-			//int value = int.Parse(Console.ReadLine());
-			//Console.WriteLine(obj.GetName(value));
-			#endregion
+            //Employee employee1 = new ContractEmployee("yusif", 1, 100, 10);
+            //employee1.DisplayEmployeeDetails();
+            #endregion
 
-			#region coffee shop
-			//Console.WriteLine(CoffeeShop.CalculateTotal(CoffeeSize.Medium, 2));
-			#endregion
+            #region traffic
+            //Traffic obj = new Traffic();
+            //Console.Write("enter a value: ");
+            //int value = int.Parse(Console.ReadLine());
+            //Console.WriteLine(obj.GetName(value));
+            #endregion
 
-			#region palindrome number
-			//Console.Write("enter a number: ");
-			//int num = int.Parse(Console.ReadLine());
-			//Console.WriteLine(IsPalindrome(num));
-			#endregion
+            #region coffee shop
+            //Console.WriteLine(CoffeeShop.CalculateTotal(CoffeeSize.Medium, 2));
+            #endregion
+
+            #region palindrome number
+            //Console.Write("enter a number: ");
+            //int num = int.Parse(Console.ReadLine());
+            //Console.WriteLine(IsPalindrome(num));
+            #endregion
         }
 		static string IsPalindrome(int num)
 		{

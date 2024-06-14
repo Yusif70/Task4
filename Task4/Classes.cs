@@ -24,16 +24,16 @@ namespace Task4
 	}
 	public class ContractEmployee : Employee
 	{
-		public int HourRate { get; set; }
+		public int HourlyRate { get; set; }
 		public int HoursWorked { get; set; }
 		public ContractEmployee(string name, int employeeId, int hourRate, int hoursWorked) : base(name, employeeId)
 		{
-			this.HourRate = hourRate;
+			this.HourlyRate = hourRate;
 			this.HoursWorked = hoursWorked;
 		}
 		public override double CalculateMonthlySalary()
 		{
-			return HourRate * HoursWorked;
+			return HourlyRate * HoursWorked;
 		}
 		public override void DisplayEmployeeDetails()
 		{
