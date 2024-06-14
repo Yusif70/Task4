@@ -35,9 +35,9 @@ namespace Task4
 		static string IsPalindrome(int num)
 		{
 			string s = num.ToString();
-			for(int i = 0; i < s.Length;)
+			for (int i = 0; i < s.Length / 2;)
 			{
-				if (s[i] == s[s.Length - 1])
+				if ((num % Power(10, i + 1) - num % Power(10, i)) / Power(10, i) == (num % Power(10, s.Length) - num % Power(10, s.Length - 1)) / Power(10, s.Length - 1))
 				{
 					break;
 				}
@@ -47,6 +47,28 @@ namespace Task4
 				}
 			}
 			return "number is palindrome";
+
+			//for (int i = 0; i < s.Length;)
+			//{
+			//	if (s[i] == s[s.Length - 1])
+			//	{
+			//		break;
+			//	}
+			//	else
+			//	{
+			//		return "number is not palindrome";
+			//	}
+			//}
+			//return "number is palindrome";
+		}
+		static int Power(int num, int power)
+		{
+			int newNum = 1;
+			for (int i = 0; i < power; i++)
+			{
+				newNum *= num;
+			}
+			return newNum;
 		}
 	}
 }
